@@ -1,6 +1,6 @@
 # Agentic Search
 
-A curated collection of papers on agentic search — retrieval systems, benchmarks, and agents built around autonomous, multi-step search and research. Organized by topic, following the taxonomy style of [alopatenko/LLMSearchRecommender](https://github.com/alopatenko/LLMSearchRecommender).
+A curated collection of papers on agentic search — retrieval systems, benchmarks, and agents built around autonomous, multi-step search and research.
 
 ## Table of Contents
 
