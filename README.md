@@ -53,4 +53,6 @@ Add new papers under the relevant topic section (create a new `##` section if no
   A 2-3 sentence summary.
 ```
 
+Within each section, entries are sorted by date descending (newest first).
+
 Update the Table of Contents if you add a new section.
