@@ -25,6 +25,15 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses**, Jun 2026, [arxiv](https://arxiv.org/abs/2606.02373)
   Separates state management from policy decisions in search agents: a stateful harness handles bookkeeping (a candidate pool, importance-tagged curated set, evidence links, verification records, deduplicated observations, budget-aware context rendering) while a 20B RL-trained policy focuses on high-level decisions — what to search for, which documents matter, what to verify, when to stop. Across eight retrieval benchmarks it reaches 0.730 average curated recall, beating the next-best open search subagent by +11.4 points, with especially strong generalization on held-out transfer benchmarks.
 
+- **Instructed Retriever: Unlocking System-Level Reasoning in Search Agents**, Jan 2026, [Databricks](https://www.databricks.com/blog/instructed-retriever-unlocking-system-level-reasoning-search-agents)
+  Proposes an architecture that propagates system specifications — instructions, examples, and index schema — through every stage of the search pipeline, letting agents follow complex instructions and reason across heterogeneous sources via query decomposition, relevance assessment, and metadata-to-filter translation. On the new StaRK-Instruct benchmark it achieves 35–50% higher recall than basic retrieval, and deployed in Databricks' Agent Bricks Knowledge Assistant it delivers 70%+ gains over a simple RAG baseline, with fine-tuned smaller models matching larger proprietary models.
+
+- **3x Faster Search: Parallel Test-Time Scaling with Instructed-Retriever-1**, Jun 2026, [Databricks](https://www.databricks.com/blog/3x-faster-search-parallel-test-time-scaling-instructed-retriever-1)
+  Introduces Instructed-Retriever-1, a single retrieval-specialized model that runs query generation (broadening search scope) and multi-pivot reranking (improving precision) in parallel instead of sequential agent reasoning, cutting search time by over 3x and halving answer generation time (~2s time-to-first-token) in Databricks' Knowledge Assistant. Trained on synthetic enterprise-style environments and served with FP8 quantization, speculative decoding, and a Mixture-of-Experts architecture, it matches Claude Sonnet 4.5 quality at much lower latency.
+
+- **How Search Quality Shapes RL Outcomes**, May 2026, [Exa](https://exa.ai/blog/rl-search-outcomes)
+  Compares RL-trained search agents using Exa's search engine versus a Google SERP baseline with all else held constant, finding Exa-trained agents reach higher pass@k across benchmarks (often beating larger untrained 235B models) while needing 20% fewer tokens and 62% fewer search calls, because Exa surfaces correct answers 10.7% more often per call. The efficiency gains hold even when agents are evaluated with a different search backend at inference time, across MuSiQue, HotpotQA, and out-of-distribution benchmarks like SimpleQA, FRAMES, and 2WikiMultihopQA.
+
 ## Deep Research
 
 - **Tongyi DeepResearch Technical Report**, Oct 2025, [arxiv](https://arxiv.org/abs/2510.24701)
