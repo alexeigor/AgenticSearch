@@ -22,6 +22,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **How Search Quality Shapes RL Outcomes**, May 2026, [Exa](https://exa.ai/blog/rl-search-outcomes)
   Compares RL-trained search agents using Exa's search engine versus a Google SERP baseline with all else held constant, finding Exa-trained agents reach higher pass@k across benchmarks (often beating larger untrained 235B models) while needing 20% fewer tokens and 62% fewer search calls, because Exa surfaces correct answers 10.7% more often per call. The efficiency gains hold even when agents are evaluated with a different search backend at inference time, across MuSiQue, HotpotQA, and out-of-distribution benchmarks like SimpleQA, FRAMES, and 2WikiMultihopQA.
 
+- **Beyond Semantic Similarity: Rethinking Retrieval for Agentic Search via Direct Corpus Interaction**, May 2026, [arxiv](https://arxiv.org/abs/2605.05242) · [code](https://github.com/DCI-Agent/DCI-Agent-Lite)
+  Challenges the single-shot embedding-and-vector-index retrieval pipeline, proposing direct corpus interaction (DCI) where agents search raw corpora with general-purpose tools like grep and file operations instead of a fixed semantic retriever. Effective across BRIGHT and BEIR benchmarks, showing retrieval quality depends not just on an agent's reasoning ability but on the resolution of the interface it uses to access the corpus.
+
 - **Learning to Retrieve from Agent Trajectories**, Mar 2026, [arxiv](https://arxiv.org/abs/2604.04949) · [code](https://github.com/Yuqi-Zhou/LRAT)
   Argues that retrieval models for agentic search should be trained directly on agent interaction data rather than human-centric signals. Introduces LRAT, which extracts training signals from agents' browsing actions and reasoning traces, improving evidence recall, task success, and efficiency across different agent architectures.
 
