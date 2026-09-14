@@ -23,7 +23,8 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 
 ## Evaluation Agentic Search
 
-_No papers yet — contributions welcome._
+- **Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems**, Sep 2026, [arxiv](https://arxiv.org/abs/2609.08887)
+  Introduces a 190M-document web corpus with 70k agentic search queries across ten languages, reformulated from real user queries to evaluate machine-written (rather than human-written) query reformulations. Benchmarking 13 retrievers shows model rankings stay consistent across judgment sets but diverge by domain, language, and query type, and the authors show subcorpus sampling via reciprocal rank fusion can approximate full-corpus evaluation while preserving ranking accuracy.
 
 ## Contributing
 
