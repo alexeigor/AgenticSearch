@@ -37,6 +37,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **s3: You Don't Need That Much Data to Train a Search Agent via RL**, May 2025, [arxiv](https://arxiv.org/abs/2505.14146) · [code](https://github.com/pat-jj/s3)
   A model-agnostic RAG framework that decouples the searcher from the generator, training only the searcher via RL with a reward measuring improvement over baseline RAG performance rather than fine-tuning the whole LLM or optimizing retrieval metrics directly. Achieves superior results across multiple benchmarks using just 2,400 training samples — about 70x fewer than competing approaches.
 
+- **Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning**, Mar 2025, [arxiv](https://arxiv.org/abs/2503.09516) · [code](https://github.com/PeterGriffinJin/Search-R1)
+  Trains an LLM end-to-end with RL to interleave step-by-step reasoning with autonomously generated search queries against real-time retrieval, using retrieved-token masking for stable training and a simple outcome-based reward rather than process supervision. Supports multiple RL algorithms (PPO, GRPO, REINFORCE), backbone LLMs, and search engines, improving over comparable RAG baselines by 41% on Qwen2.5-7B and 20% on Qwen2.5-3B across seven QA datasets.
+
 ## Deep Research
 
 - **Tongyi DeepResearch Technical Report**, Oct 2025, [arxiv](https://arxiv.org/abs/2510.24701) · [code](https://github.com/Alibaba-NLP/DeepResearch)
