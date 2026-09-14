@@ -10,7 +10,7 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 
 ## Retrieval
 
-- **ITER: Interaction-Aware Retrieval for Agentic Search**, Aug 2026, [arxiv](https://arxiv.org/abs/2608.27912)
+- **ITER: Interaction-Aware Retrieval for Agentic Search**, Aug 2026, [arxiv](https://arxiv.org/abs/2608.27912) · [code](https://github.com/ielab/ITER)
   A dense retriever for agent-based search that conditions on the main question, the agent's pre-search reasoning, and preceding sub-queries, rather than just the current query and results. Trained with trajectory-based signals where previously seen documents act as negatives, it gives an average relative improvement of 6.9% on InfoSeek-Eval and 15.4% on BrowseComp-Plus across multiple agent models.
 
 - **Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses**, Jun 2026, [arxiv](https://arxiv.org/abs/2606.02373) · [code](https://github.com/pat-jj/harness-1)
