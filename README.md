@@ -22,6 +22,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **s3: You Don't Need That Much Data to Train a Search Agent via RL**, May 2025, [arxiv](https://arxiv.org/abs/2505.14146)
   A model-agnostic RAG framework that decouples the searcher from the generator, training only the searcher via RL with a reward measuring improvement over baseline RAG performance rather than fine-tuning the whole LLM or optimizing retrieval metrics directly. Achieves superior results across multiple benchmarks using just 2,400 training samples — about 70x fewer than competing approaches.
 
+- **Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses**, Jun 2026, [arxiv](https://arxiv.org/abs/2606.02373)
+  Separates state management from policy decisions in search agents: a stateful harness handles bookkeeping (a candidate pool, importance-tagged curated set, evidence links, verification records, deduplicated observations, budget-aware context rendering) while a 20B RL-trained policy focuses on high-level decisions — what to search for, which documents matter, what to verify, when to stop. Across eight retrieval benchmarks it reaches 0.730 average curated recall, beating the next-best open search subagent by +11.4 points, with especially strong generalization on held-out transfer benchmarks.
+
 ## Deep Research
 
 - **Tongyi DeepResearch Technical Report**, Oct 2025, [arxiv](https://arxiv.org/abs/2510.24701)
