@@ -16,6 +16,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **Learning to Retrieve from Agent Trajectories**, Mar 2026, [arxiv](https://arxiv.org/abs/2604.04949)
   Argues that retrieval models for agentic search should be trained directly on agent interaction data rather than human-centric signals. Introduces LRAT, which extracts training signals from agents' browsing actions and reasoning traces, improving evidence recall, task success, and efficiency across different agent architectures.
 
+- **Chroma Context-1: Training a Self-Editing Search Agent**, Mar 2026, [Chroma](https://www.trychroma.com/research/context-1)
+  A 20B-parameter model trained as a specialized search subagent for multi-hop retrieval, ranking relevant documents from large corpora for a downstream reasoning model rather than answering questions itself. Its key idea is "self-editing context" — discarding irrelevant retrieved documents mid-search to stay within bounded context windows — trained via RL with synthetic tasks across web, finance, legal, and email domains, matching much larger frontier models while running up to 10x faster; model weights and the data generation pipeline are released publicly.
+
 ## Deep Research
 
 - **Tongyi DeepResearch Technical Report**, Oct 2025, [arxiv](https://arxiv.org/abs/2510.24701)
