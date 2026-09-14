@@ -19,6 +19,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **Chroma Context-1: Training a Self-Editing Search Agent**, Mar 2026, [Chroma](https://www.trychroma.com/research/context-1)
   A 20B-parameter model trained as a specialized search subagent for multi-hop retrieval, ranking relevant documents from large corpora for a downstream reasoning model rather than answering questions itself. Its key idea is "self-editing context" — discarding irrelevant retrieved documents mid-search to stay within bounded context windows — trained via RL with synthetic tasks across web, finance, legal, and email domains, matching much larger frontier models while running up to 10x faster; model weights and the data generation pipeline are released publicly.
 
+- **s3: You Don't Need That Much Data to Train a Search Agent via RL**, May 2025, [arxiv](https://arxiv.org/abs/2505.14146)
+  A model-agnostic RAG framework that decouples the searcher from the generator, training only the searcher via RL with a reward measuring improvement over baseline RAG performance rather than fine-tuning the whole LLM or optimizing retrieval metrics directly. Achieves superior results across multiple benchmarks using just 2,400 training samples — about 70x fewer than competing approaches.
+
 ## Deep Research
 
 - **Tongyi DeepResearch Technical Report**, Oct 2025, [arxiv](https://arxiv.org/abs/2510.24701)
