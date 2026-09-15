@@ -50,6 +50,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 - **Q2D-Web: A Large-Scale Benchmark for Retrieval in Agentic RAG Systems**, Sep 2026, [arxiv](https://arxiv.org/abs/2609.08887)
   Introduces a 190M-document web corpus with 70k agentic search queries across ten languages, reformulated from real user queries to evaluate machine-written (rather than human-written) query reformulations. Benchmarking 13 retrievers shows model rankings stay consistent across judgment sets but diverge by domain, language, and query type, and the authors show subcorpus sampling via reciprocal rank fusion can approximate full-corpus evaluation while preserving ranking accuracy.
 
+- **NEEDLE: The Benchmark Your Search Engine Can't Memorize**, Aug 2026, [Keenable](https://keenable.ai/blog/needle-the-benchmark-your-search-engine-can-t-memorize) · [code](https://github.com/keenableai/needle)
+  A live, open-source benchmark comparing search engines on agent-style query patterns rather than human search behavior, covering News, Finance, Scholar, AgenticRare (obscure entities), and Legal categories. Query sets are continuously refreshed from real agent search logs and live sources like RSS feeds and Google Trends (hourly for News, daily for the rest) to prevent overfitting and memorization, with runs executed in public GitHub Actions and results published to a Hugging Face dataset.
+
 ## Contributing
 
 Add new papers under the relevant topic section (create a new `##` section if none fits) using the format:
