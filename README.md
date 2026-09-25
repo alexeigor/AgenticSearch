@@ -10,6 +10,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 
 ## Retrieval
 
+- **How We Built Photon**, Sep 2026, [Perplexity](https://www.perplexity.ai/hub/blog/photon)
+  Photon is Perplexity's new Rust-based retrieval and ranking service, built by a small engineering team working with hundreds of coding agents. It indexes over 200B URLs using compact index reads and asynchronous batched disk I/O, and ranks results in multiple stages that combine lexical and semantic retrieval with embedding scorers and cross-encoder rerankers. Internal p99 latency fell from ~800ms to ~65ms on about 20% fewer serving machines while storing 2.5x more data per document, and it powers the new Fast Search API, which returns 95% of results within 230ms.
+
 - **ITER: Interaction-Aware Retrieval for Agentic Search**, Aug 2026, [arxiv](https://arxiv.org/abs/2608.27912) · [code](https://github.com/ielab/ITER)
   A dense retriever for agent-based search that conditions on the main question, the agent's pre-search reasoning, and preceding sub-queries, rather than just the current query and results. Trained with trajectory-based signals where previously seen documents act as negatives, it gives an average relative improvement of 6.9% on InfoSeek-Eval and 15.4% on BrowseComp-Plus across multiple agent models.
 
