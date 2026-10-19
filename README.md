@@ -34,6 +34,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 
 ## Search Agents
 
+- **SearchJev: A Fast and Calibrated System-1 Model for Search Agents**, Oct 2026, [arxiv](https://arxiv.org/abs/2610.05107)
+  A fast "System-1" model that makes a search agent's short decisions (relevance, evidence sufficiency, search actions) by directly scoring the allowed options instead of generating text, and passes uncertain cases to a slower "System-2" model that handles planning, query generation, and answer writing. Trained with Soft-Label Learning for Calibrated Decisions (SLCD) and evaluated on the new SearchDecision-Bench, which covers six decision types, it makes decisions 5.2-5.3x faster than same-size Qwen3.5 generative models and cuts calibration error by 41-74%; on BrowseComp-Plus the combined agent's search is 3.7-4.7x faster and answer accuracy rises from 45% to up to 54%.
+
 - **Harness-1: Reinforcement Learning for Search Agents with State-Externalizing Harnesses**, Jun 2026, [arxiv](https://arxiv.org/abs/2606.02373) · [code](https://github.com/pat-jj/harness-1)
   Separates state management from policy decisions in search agents: a stateful harness handles bookkeeping (a candidate pool, importance-tagged curated set, evidence links, verification records, deduplicated observations, budget-aware context rendering) while a 20B RL-trained policy focuses on high-level decisions — what to search for, which documents matter, what to verify, when to stop. Across eight retrieval benchmarks it reaches 0.730 average curated recall, beating the next-best open search subagent by +11.4 points, with especially strong generalization on held-out transfer benchmarks.
 
