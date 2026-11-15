@@ -11,6 +11,9 @@ A curated collection of papers on agentic search — retrieval systems, benchmar
 
 ## Retrieval
 
+- **Octen-WebGR: Scaling Generative Retrieval to 200 Million Web Pages**, Oct 2026, [arxiv](https://arxiv.org/abs/2610.35256) · [code](https://huggingface.co/Octen/Octen-WebGR-4B)
+  A generative retrieval framework for navigational web search that stores 201M web pages in a 4B-parameter language model's weights: given a query, the model generates a two-token semantic identifier, constrained to a table of real URLs. On a month of real navigational traffic it reaches 59.6% top-1 accuracy, compared with 46.5% for a click-enhanced dense retriever and up to 37.5% for frontier LLMs answering from memory, which cost at least 40x more per query. It runs on a single GPU in about 10 GB of memory, versus 412 GB for exact dense retrieval. Generative retrieval is strongest on new phrasings for pages with substantial interaction history, while embeddings do better on rarely visited pages, so the two complement each other. Scaling experiments up to 32M URLs suggest the required model size grows sublinearly with index size, and that page exposure limits retrieval more than model capacity does.
+
 - **How We Built Photon**, Sep 2026, [Perplexity](https://www.perplexity.ai/hub/blog/photon)
   Photon is Perplexity's new Rust-based retrieval and ranking service, built by a small engineering team working with hundreds of coding agents. It indexes over 200B URLs using compact index reads and asynchronous batched disk I/O, and ranks results in multiple stages that combine lexical and semantic retrieval with embedding scorers and cross-encoder rerankers. Internal p99 latency fell from ~800ms to ~65ms on about 20% fewer serving machines while storing 2.5x more data per document, and it powers the new Fast Search API, which returns 95% of results within 230ms.
 
